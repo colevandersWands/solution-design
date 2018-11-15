@@ -1,0 +1,1 @@
+creative commons: attribution, share alike, not for profit
