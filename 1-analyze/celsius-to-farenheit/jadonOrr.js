@@ -1,11 +1,11 @@
-console.log('--- convert celcius to farenheit ---')
+console.log('--- convert celsius to farenheit ---')
 /*
 ARGS: 1
-  celcius {num}: to convert to farenheit
+  celsius {num}: to convert to farenheit
 RETURN: {num}
-  the farenheit equialent of the celcius argument
+  the farenheit equialent of the celsius argument
 BEHAVIOR:
-  converts degrees celcius to degrees farenheit
+  converts degrees celsius to degrees farenheit
 IMPLEMENTATION:
   he just plugged in the standard formula
 */
@@ -80,12 +80,12 @@ console.log('--- chunkified ---');
 
 console.log('--- logged ---');
 
-  function convertToF_logged(celcius, trace) {
+  function convertToF_logged(celsius, trace) {
     let log;
     if (trace) {
-      log = {args: {celcius}};
+      log = {args: {celsius}};
     };
-    const step_1 = times_9(celcius);
+    const step_1 = times_9(celsius);
     if (trace) {
       log.step_1 = step_1;
     };
