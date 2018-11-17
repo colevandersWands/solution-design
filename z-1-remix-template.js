@@ -1,46 +1,61 @@
-console.log('--- name of challenge ---');
+console.log('--- challenge remix x ---');
 
 /*
 ARGS: 
 RETURN: 
 BEHAVIOR:
-IMPLEMENTATION:
 */
 
-let test_cases = [
-	{name: 'name', args: ['name'], expected: null}
-];
+// test cases
 
-console.log('--- scaffolded ---');
-  // https://astexplorer.net
+console.log('--- remix description ---');
+
+/*
+  Strategy:
+    ...
+  Implementation:
+    ...
+*/
+
+console.log('--- test raw material ---');
+
+  /*
+    copy-paste in the solutions and chunks you want to remix
+    bring along their tests too
+  */
+
+
+console.log('--- build the remix ---');
   
-  function remix_1(a) {
-  	// a 
+  
+  function challenge_remix_x(num) {
+    /*
+      build your remix here
+        call as functions any chunks you brought over
+        and/or use the body of another solution as a starter
+    */
   };
-  run_tests(remix_1, test_cases);
+  run_tests(challenge_remix_x, challenge_test_cases);
 
 
-console.log('--- logged ---');
+console.log('--- log strategy ---');
 
-  // function their_solution_logged(a, _log) {
-  //  let log;
-  //  if (_log) {
-  //    log = {args: {a}};
-  //  };
+  function factorialize_remix_1_logged(num, _log) {
+      // let log;
+      //   if (_log) {
+      //     log = {args: { num }};
+      //   };
 
-  //  let step_1 = nulling(a);
-  //  if (_log) {
-  //    log.step_1 = step_1;
-  //  }
-
-  //   if (_log) {
-  //     log.result = step_1
-  //     return log;
-  //   } else { 
-  //     return step_1;
-  //   };
-  // };
-  // run_tests(their_solution_logged, test_cases, true);
+      // ...
+      
+      // if (_log) {
+      //   log.result = result;
+      //   return log;
+      // } else { 
+      //   return result;
+      // };
+  };
+  run_tests(factorialize_remix_1_logged, factorialization_test_cases, true);
 
 
 

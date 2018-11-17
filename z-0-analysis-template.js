@@ -1,4 +1,4 @@
-console.log('--- name of challenge ---');
+console.log('--- user-name\'s challenge-name ---');
 
 /*
 ARGS: 
@@ -12,7 +12,7 @@ let test_cases = [
 ];
 
 
-console.log('--- userName\'s solution ---');
+console.log('--- test behavior ---');
 // link to user's code on github
 
   // function their_solution(a) {
@@ -20,7 +20,7 @@ console.log('--- userName\'s solution ---');
   // };
   // run_tests(their_solution, test_cases);
 
-console.log('--- traced ---');
+console.log('--- trace implementation ---');
   // https://astexplorer.net
   
   // function their_solution_traced(a) {
@@ -32,7 +32,7 @@ console.log('--- traced ---');
   // run_tests(their_solution_traced, test_cases);
 
 
-console.log('--- chunked ---');
+console.log('--- chunk strategy ---');
 
   // function their_solution_chunked(a) {
   // 	let result = nulling(a);
@@ -47,7 +47,7 @@ console.log('--- chunked ---');
   // function nulling() { return null };
   // run_tests(nulling, nulling_tests);
 
-console.log('--- logged ---');
+console.log('--- communicate findings ---');
 
   // function their_solution_logged(a, _log) {
   //  let log;

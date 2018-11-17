@@ -1,0 +1,65 @@
+* https://scholarworks.gsu.edu/cgi/viewcontent.cgi?article=1010&context=ltd_facpub
+	The groups that performed best were those that received subgoal descriptions with farther transfer between examples and practice problems and those that described subgoals for themselves with nearer transfer.
+	transfer: iso vs contextual
+	remix: Instead of having a completely blank space to write the practice problem’s solution, like in the non-subgoal-oriented conditions, the subgoal-oriented conditions had several small blank spaces headed by subgoal labels or placeholders for labels. This design is typical of subgoal label research that uses practice problems (e.g., Margulieux et al., 2012) and was intended to support learners in initial problem solving and highlight connections between the examples and practice problems.
+
+this series
+	learn to create labeled-subgoal worked examples from given code
+	contextual transfer: similar strategies accross different challenges
+	isomorphic transfer: same challenge, different test cases
+	paired practice problems: multiple remixes or worked-examples
+
+no need to refactor/study chunks
+	the same process would apply at that scale
+
+Worked Examples in Computer Science Ben Skudder Andrew Luxton-Reilly
+	- minus z-work-it-template, this is all well-covered in sol-des
+	ways of structuring
+		examples only
+		example/problem blocks
+		example/problem pairs
+		faded examples
+			forward & backwards
+	further structure
+		subgoal labeling
+			group & impetize steps
+		self-explanation prompts
+	best practices
+		high variability
+		read "next reads"
+			http://mre.faculty.asu.edu/1353.pdf
+			https://pdfs.semanticscholar.org/c901/2c701f73d3f13a3dca6ad1f648b03373d3a0.pdf
+		worked example before problem
+			- analysis before solving
+			may not be most motivating (golden circle)
+			but appears to be most effective 
+		pairing is better than blocking
+			- gregory et all, '93
+			- blocking was the worst of all conditions
+			provide worked example or two
+			followed directly by several similar exercises
+				inherant in this now solution-design/fcc structure
+		? examples only is as effective as pairs?
+			but problem pairs will be more motivating
+		fading is good
+			unclear between backwards (last fade first) & forwards (first fade last)
+			but do learn most about faded steps
+				- fading is inherant in this sol-des
+			expert-reversal effect - allows self-pacing
+				- solution-design allows for this
+			prefer forward fading but mix them ?
+		self-explanation
+			provide a list of principles and ask why chose what chose
+			but anything is better than nothing
+		sub-goal labeling = good
+		grey et al '07
+			- faded worked examples
+			dimensions
+				algorithmic
+					design
+					implementation
+					semantics
+						assertion (say things about the code at points in execution)
+							- chunk tests
+						execution (given input, provide output) - find test cases ?
+						verification (test the code) - use test cases ?

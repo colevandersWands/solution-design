@@ -54,6 +54,7 @@ console.log('--- traced ---');
 
 console.log('--- chunked ---');
 
+  // take 2
   // not much to chunk, just going to rename variables
   //  according to their roles
   function tns_factorialize_chunked(num) {
@@ -69,9 +70,9 @@ console.log('--- chunked ---');
   };
   run_tests(tns_factorialize_chunked, factorialization_test_cases);
 
-/* 
-this worked, but isn't the best way to chunk this code
-    because: a trace of tns_factorialize_chunked is not helpful
+  // take 1
+  // this worked, but isn't the best way to chunk this code
+  //   because: a trace of tns_factorialize_chunked is not helpful
 
   function tns_factorialize_chunked(num) {
     let initial_value = 1;
@@ -99,7 +100,6 @@ this worked, but isn't the best way to chunk this code
     return accumulator;
   };
   run_tests(multiply_a_range, multiply_a_range_tests);
-*/
 
 console.log('--- logged ---');
 

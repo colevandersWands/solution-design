@@ -8,45 +8,24 @@ console.log('--- manually solve cases ---');
 
 let case_name = [
 	{a: 0, b: 3},
-	{},
-	{},
+	{operation: 'state'},
+	{operation: 'state'},
 	{result: 5}
 ];
 
 let case_name = [
 	{a: 0, b: 3},
-	{},
-	{},
+	{operation: 'state'},
+	{operation: 'state'},
 	{result: 5}
 ];
 
 let case_name = [
 	{a: 0, b: 3},
-	{},
-	{},
+	{operation: 'state'},
+	{operation: 'state'},
 	{result: 5}
 ];
-
-console.log('--- build/test strategy ---');
-
-let test_cases = [{}];
-
-{ // use this to develop your strategy manually
-	let arg = null;
-	let expected = null;
-
-	let actual;
-	{ // = challenge(arg);
-		let chunk_1;
-		{}
-		let chunk_1;
-		{}
-		let chunk_1;
-		{}
-	};
-
-	assert(actual === expected, `FAIL: ${actual} !== ${expected}`);
-}
 
 
 
@@ -74,6 +53,28 @@ console.log('--- scaffold chunks ---');
 		return step_3
 	};
 	test_it();
+
+
+console.log('--- build/test strategy ---');
+
+let test_cases = [{}];
+
+{ // use this to develop your strategy manually
+	let arg = null;
+	let expected = null;
+
+	let actual;
+	{ // = challenge(arg);
+		let chunk_1;
+		{}
+		let chunk_1;
+		{}
+		let chunk_1;
+		{}
+	};
+
+	assert(actual === expected, `FAIL: ${actual} !== ${expected}`);
+}
 
 
 console.log('--- tracify solution ---');

@@ -1,6 +1,4 @@
-what goes in gh?
-
-find this a better name
+recommend to always comment save steps
 
 --- old, revisit this all ---
 
@@ -9,54 +7,14 @@ find this a better name
 https://github.com/loverajoel/jstips
 https://www.ted.com/talks/margaret_heffernan_why_it_s_time_to_forget_the_pecking_order_at_work
 
-line this up with fcc Javascript Algorithms And Data Structures 
-	it's good 
-	and huge
-	and popular
-	but not complete
-		it needs us
-
 https://dspace.mit.edu/bitstream/handle/1721.1/113144/1017990524-MIT.pdf?sequence=1
 	can i mimick this in js with constraints?
 		could make a neat stand-alone course
-
-structure
-	self-testing objects, mvclh, ...
-	can all be done as addons once pytut/replit/inspector work is done
-	only as part of embedding in ui's
-
-are a,b,c,d's md's in the main exercise repo?
-	some yes, some no. but all linked to as resources therein
-	some have exercises, some don't
-
-repos have
-	this is somewhere in a folder up there
-
-using parsons
-	make expansions// example pages as comptation & expansions challenges
-	and with the tables
-	then they do the codeing bit as work
-	and have this as a reference and exercise list
-
-staple of open course
-
-code reviews
-	for peer grading?
-	haven't 'passed' a step till it's been reviewed
-	give clear guidelines
-	a whole repo on this is due
-
-creating exercises
-	where/how to fit this?
 
 debugging
 	empirical style
 	exercises
 	pr's 
-
-fcc
-	how to sync with f'al & oop
-	fcc folder for fcc exercises?
 
 extreme exercise
 	manual code styling in word
