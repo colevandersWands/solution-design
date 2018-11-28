@@ -91,15 +91,15 @@ console.log('--- chunk strategy ---');
   function sumFibs_chunked(num) {
     const fibs_starter = [0,1];
 
-    const fibs_below_num = find_fibs_below_num(num, fibs_starter);
+    const fibs_lesseq_num = find_fibs_lesseq_num(num, fibs_starter);
 
-    const sum_of_odds = sum_odds_in_arr(fibs_below_num);
+    const sum_of_odds = sum_odds_in_arr(fibs_lesseq_num);
 
     return sum_of_odds;
   }
   // run_tests(sumFibs_chunked, test_cases);
 
-  const find_fibs_below_num_tests = [
+  const find_fibs_lesseq_num_tests = [
     {name: '3 -> [0, 1, 1, 2]', args: [3, [0, 1]], expected: [0, 1, 1, 2]},
     {name: '4 -> [0, 1, 1, 2, 3]', args: [4, [0, 1]], expected: [0, 1, 1, 2, 3]},
     {name: '5 -> [0, 1, 1, 2, 3, 5]', args: [5, [0, 1]], expected: [0, 1, 1, 2, 3, 5]},
@@ -110,7 +110,7 @@ console.log('--- chunk strategy ---');
     {name: '21', args: [21, [0, 1]], expected: [0, 1, 1, 2, 3, 5, 8, 13, 21]},
     {name: '22', args: [22, [0, 1]], expected: [0, 1, 1, 2, 3, 5, 8, 13, 21]},
   ];
-  function find_fibs_below_num(_num, _starter) {
+  function find_fibs_lesseq_num(_num, _starter) {
     // console.log(_num)
     
     // don't modify args by pointer!
@@ -127,7 +127,7 @@ console.log('--- chunk strategy ---');
     }
     return fibs;
   };
-  run_tests(find_fibs_below_num, find_fibs_below_num_tests);
+  run_tests(find_fibs_lesseq_num, find_fibs_lesseq_num_tests);
 
   const sum_odds_in_arr_tests = [
     {name: '[3, 5, 7] -> 15', args: [[3, 5, 7]], expected: 15},
@@ -167,7 +167,7 @@ console.log('--- communicate strategy ---');
     const fibs_starter = [0,1];
     // if (_log) log._0_fibs_starter = fibs_starter;
 
-    const fibs_below_num = find_fibs_below_num(num, fibs_starter);
+    const fibs_below_num = find_fibs_lesseq_num(num, fibs_starter);
     if (_log) log._1_fibs_below_num = fibs_below_num;
 
     const sum_of_odds = sum_odds_in_arr(fibs_below_num);

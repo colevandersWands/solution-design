@@ -9,6 +9,11 @@ let test_cases = [
   {name: '1000 -> 1785', args: [1000], expected: 1785},
   {name: '4000000 -> 4613732', args: [4000000], expected: 4613732},
   {name: '4 -> 5', args: [4], expected: 5},
+  {name: '6 -> 10', args: [6], expected: 10},
+  {name: '9 -> 10', args: [9], expected: 10},
+  {name: '11 -> 10', args: [11], expected: 10},
+  {name: '12 -> 23', args: [12], expected: 10},
+  {name: '13 -> 23', args: [13], expected: 23},
   {name: '75024 -> 60696', args: [75024], expected: 60696},
   {name: '75025 -> 135721', args: [75025], expected: 135721},
 ];
@@ -111,8 +116,8 @@ run_tests(update_sum, update_sum_tests);
 console.log('--- communicate strategy ---');
 
 test_cases.push({name: '4 -> 6', args: [4], expected: 6});
-test_cases.push({name: '5 -> 8', args: [5], expected: 8});
-test_cases.push({name: '10 -> 23', args: [10], expected: 32});
+// test_cases.push({name: '5 -> 8', args: [5], expected: 8});
+// test_cases.push({name: '10 -> 23', args: [10], expected: 32});
 test_cases.push({name: '23 -> 23', args: [23], expected: 32});
 
 function sumFibs_logged(num, _log) {
