@@ -1,96 +1,98 @@
-console.log('--- challenge remix x ---');
-
-/*
-ARGS: 
-RETURN: 
-BEHAVIOR:
-*/
-
-// test cases
-
-console.log('--- remix description ---');
-
-/*
-  Strategy:
-    ...
-  Implementation:
-    ...
-*/
-
-console.log('--- test raw material ---');
+{
+  console.log('--- challenge remix x ---');
 
   /*
-    copy-paste in the solutions and chunks you want to remix
-    bring along their tests too
+  ARGS: 
+  RETURN: 
+  BEHAVIOR:
   */
 
+  // test cases
 
-console.log('--- build the remix ---');
-  
-  
-  function challenge_remix_x(num) {
+  console.log('--- remix description ---');
+
+  /*
+    Strategy:
+      ...
+    Implementation:
+      ...
+  */
+
+  console.log('--- test raw material ---');
+
     /*
-      build your remix here
-        call as functions any chunks you brought over
-        and/or use the body of another solution as a starter
+      copy-paste in the solutions and chunks you want to remix
+      bring along their tests too
     */
-  };
-  run_tests(challenge_remix_x, challenge_test_cases);
 
 
-console.log('--- log strategy ---');
-
-  function factorialize_remix_1_logged(num, _log) {
-      // let log;
-      //   if (_log) {
-      //     log = {args: { num }};
-      //   };
-
-      // ...
-      
-      // if (_log) {
-      //   log.result = result;
-      //   return log;
-      // } else { 
-      //   return result;
-      // };
-  };
-  run_tests(factorialize_remix_1_logged, factorialization_test_cases, true);
-
-
-
-// testing utils
-function run_tests(_target, _cases, _log) {
-  for (let t_case of _cases) {
-    let expected = t_case.expected;
-
-    let actual;
-    let msg;
-    let log;
-    if (_log) {
-      log = _target(... t_case.args, true);
-      actual = log.result;
-    } else {
-      actual = _target(... t_case.args, false);
+  console.log('--- build the remix ---');
+    
+    
+    function challenge_remix_x(num) {
+      /*
+        build your remix here
+          call as functions any chunks you brought over
+          and/or use the body of another solution as a starter
+      */
     };
+    run_tests(challenge_remix_x, challenge_test_cases);
 
-    let pass;
-    if (typeof expected === 'object') {
-      actual = JSON.stringify(actual);
-      expected = JSON.stringify(expected);
-      pass = actual === expected;
-    } else {
-      pass = actual === expected;
+
+  console.log('--- log strategy ---');
+
+    function factorialize_remix_1_logged(num, _log) {
+        // let log;
+        //   if (_log) {
+        //     log = {args: { num }};
+        //   };
+
+        // ...
+        
+        // if (_log) {
+        //   log.result = result;
+        //   return log;
+        // } else { 
+        //   return result;
+        // };
     };
+    run_tests(factorialize_remix_1_logged, factorialization_test_cases, true);
 
-    if (!pass && _log) {
-      console.log(`    ${t_case.name}: \n` + 
-          "actual: ", log, "\n" +
-          `expected: {${typeof expected}, ${expected}}`);
-    } else if (!pass) {
-      console.log(`${t_case.name}: \n` + 
-          `   actual: {${typeof actual}, ${actual}} \n` +
-          `   expected: {${typeof expected}, ${expected}}`);
+
+
+  // testing utils
+  function run_tests(_target, _cases, _log) {
+    for (let t_case of _cases) {
+      let expected = t_case.expected;
+
+      let actual;
+      let msg;
+      let log;
+      if (_log) {
+        log = _target(... t_case.args, true);
+        actual = log.result;
+      } else {
+        actual = _target(... t_case.args, false);
+      };
+
+      let pass;
+      if (typeof expected === 'object') {
+        actual = JSON.stringify(actual);
+        expected = JSON.stringify(expected);
+        pass = actual === expected;
+      } else {
+        pass = actual === expected;
+      };
+
+      if (!pass && _log) {
+        console.log(`    ${t_case.name}: \n` + 
+            "actual: ", log, "\n" +
+            `expected: {${typeof expected}, ${expected}}`);
+      } else if (!pass) {
+        console.log(`${t_case.name}: \n` + 
+            `   actual: {${typeof actual}, ${actual}} \n` +
+            `   expected: {${typeof expected}, ${expected}}`);
+      };
     };
   };
-};
+}

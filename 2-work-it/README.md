@@ -14,6 +14,12 @@ creating exercises
 		what are alternatives
 	chunks
 
+assignments:
+	sumfib
+		* https://github.com/samanthaming/freecodecamp-my-solutions/blob/master/intermediate-algorithm/12-sum-all-odd-fibonacci-numbers.js
+
+challenges:
+	https://github.com/samanthaming/freecodecamp-my-solutions/blob/master/intermediate-algorithm/10-sorted-union.js
 
 --- from old creating-new-worked-examples ---
 

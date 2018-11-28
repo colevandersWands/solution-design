@@ -1,3 +1,23 @@
+more highly-curated examples
+	ie. TheNewStyles
+		chunking doesn't quite work
+		baaad for first step
+		mixing concerns - 'variable names'
+	very first examples
+		clear completed example
+		2-3 highly curated ones to study
+		people won't really run off and do sooo many
+	label bastards as such
+		they shall be illuminatingly difficult
+	stages of curation
+		from easy & worked
+		to meaningful bastards
+		to the wild world
+
+
+
+*** https://www.academia.edu/31671345/Learning_by_Taking_Apart_Deconstructing_Code_by_Reading_Tracing_and_Debugging
+
 recommend to always comment save steps
 
 --- old, revisit this all ---

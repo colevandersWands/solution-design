@@ -2,6 +2,8 @@
 	The groups that performed best were those that received subgoal descriptions with farther transfer between examples and practice problems and those that described subgoals for themselves with nearer transfer.
 	transfer: iso vs contextual
 	remix: Instead of having a completely blank space to write the practice problem’s solution, like in the non-subgoal-oriented conditions, the subgoal-oriented conditions had several small blank spaces headed by subgoal labels or placeholders for labels. This design is typical of subgoal label research that uses practice problems (e.g., Margulieux et al., 2012) and was intended to support learners in initial problem solving and highlight connections between the examples and practice problems.
+* http://www.eg.bucknell.edu/~mead/ITiCSE-2006/BolognaReport.pdf
+	
 
 this series
 	learn to create labeled-subgoal worked examples from given code
@@ -11,6 +13,11 @@ this series
 
 no need to refactor/study chunks
 	the same process would apply at that scale
+
+https://pdfs.semanticscholar.org/c901/2c701f73d3f13a3dca6ad1f648b03373d3a0.pdf
+	• The goal-free effect – the student works a problem without specific goals
+	• Worked example effect – working from a solved example, the student solves an unworked problem
+	• Partially worked example effect – the student completes partially worked solutions
 
 Worked Examples in Computer Science Ben Skudder Andrew Luxton-Reilly
 	- minus z-work-it-template, this is all well-covered in sol-des
