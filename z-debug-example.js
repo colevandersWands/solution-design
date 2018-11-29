@@ -1,3 +1,8 @@
+// there will be a whole unit on debugging before solution design
+// it will cover this template and have smaller, focused, exercises
+// in the mean time:
+//	https://medium.com/northcoders/understanding-bugs-and-errors-in-javascript-675ebb0a109a
+//	https://codeburst.io/5-common-mistakes-that-every-new-javascript-programmer-does-d0559770d345
 {
 console.log('--- debugging this code ---');
 

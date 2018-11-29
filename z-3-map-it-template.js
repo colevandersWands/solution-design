@@ -1,5 +1,5 @@
 {
-	console.log('--- name of challenge ---');
+console.log('--- name of challenge ---');
 
 	// problem description
 
@@ -9,53 +9,58 @@
 
 	// test cases
 
-	console.log('--- manually solve cases ---');
+console.log('--- define mapping strategy ---')
 
-		const _4_5 = {
-			arg: 4,
+
+
+
+console.log('--- manually solve mapped cases ---');
+
+	const _4_5 = [
+		{ arg: 4, arg_mapped: 4}, {
 			find_fibs: [0,1,1,2,3],
 			select_odds: [1,1,3],
-			add_them: 5
-		};
+			add_them: 5  }, 
+		{result_mapped: 5, result: 5}
 
-	console.log('--- develop & test chunks ---');
+console.log('--- develop & test chunks ---');
 
-		let chunk_a_tests = [{}];
-		function chunk_a() {};
-		test_it();
+	let chunk_a_tests = [{}];
+	function chunk_a() {};
+	test_it();
 
-		let chunk_b_tests = [{}];
-		function chunk_b() {};
-		test_it();
+	let chunk_b_tests = [{}];
+	function chunk_b() {};
+	test_it();
 
-		let chunk_c_tests = [{}];
-		function chunk_c() {};
-		test_it();
-
-
-	console.log('--- scaffold chunks ---');
-
-		function solution() {
-			let step_1 = chunk_a();
-			let step_2 = chunk_b();
-			let step_3 = chunk_c();
-			return step_3
-		};
-		test_it();
+	let chunk_c_tests = [{}];
+	function chunk_c() {};
+	test_it();
 
 
-	console.log('--- tracify solution ---');
+console.log('--- scaffold chunks ---');
 
-		function tracified(_trace) {
-			let step_1 = chunk_a();
-			if(_trace);
-			let step_2 = chunk_b();
-			if(_trace);
-			let step_3 = chunk_c();
-			if(_trace);
-			return step_3
-		};
-		test_it();
+	function solution() {
+		let step_1 = chunk_a();
+		let step_2 = chunk_b();
+		let step_3 = chunk_c();
+		return step_3
+	};
+	test_it();
+
+
+console.log('--- tracify solution ---');
+
+	function tracified(_trace) {
+		let step_1 = chunk_a();
+		if(_trace);
+		let step_2 = chunk_b();
+		if(_trace);
+		let step_3 = chunk_c();
+		if(_trace);
+		return step_3
+	};
+	test_it();
 
 
 	// testing utils

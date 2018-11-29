@@ -3,6 +3,14 @@
 
   // plain english problem statement
 
+
+  /*
+  ARGS: 
+  RETURN: 
+  BEHAVIOR:
+  IMPLEMENTATION:
+  */
+
   // copied from fcc 
   let test_cases = [ 
     {name: 'name', args: ['name'], expected: null}
@@ -17,13 +25,6 @@
     //   return null;
     // };
     // run_tests(their_solution, test_cases);
-
-  /*
-  ARGS: 
-  RETURN: 
-  BEHAVIOR:
-  IMPLEMENTATION:
-  */
 
   console.log('--- trace implementation ---');
 
@@ -52,6 +53,8 @@
     // run_tests(nulling, nulling_tests);
 
   console.log('--- communicate findings ---');
+
+    // push some bad test cases to test out your logging
 
     // function their_solution_logged(a, _log) {
     //  let log;
