@@ -1,37 +1,49 @@
 {
 console.log('--- challenge-name ---');
 
-// plain english problem statement
+  // plain english problem statement
 
 
-/*
-ARGS: 
-RETURN: 
-BEHAVIOR:
-IMPLEMENTATION:
-*/
+  /*
+  ARGS: 
+  RETURN: 
+  BEHAVIOR:
+  IMPLEMENTATION:
+  */
 
-// copied from fcc 
-let test_cases = [ 
-  {name: 'name', args: ['name'], expected: null}
-];
+  // copied from fcc 
+  const test_cases = [
+    {name: 'a b c d, 2', args: [["a", "b", "c", "d"], 2], expected: [["a", "b"], ["c", "d"]]},
+    {name: '0-5, 3', args: [[0, 1, 2, 3, 4, 5], 3], expected: [[0, 1, 2], [3, 4, 5]]},
+    {name: '0-5, 2', args: [[0, 1, 2, 3, 4, 5], 2], expected: [[0, 1], [2, 3], [4, 5]]},
+    {name: '0-5, 4', args: [[0, 1, 2, 3, 4, 5], 4], expected: [[0, 1, 2, 3], [4, 5]]},
+    {name: '0-6, 3', args: [[0, 1, 2, 3, 4, 5, 6], 3], expected: [[0, 1, 2], [3, 4, 5], [6]]},
+    {name: '0-8, 4', args: [[0, 1, 2, 3, 4, 5, 6, 7, 8], 4], expected: [[0, 1, 2, 3], [4, 5, 6, 7], [8]]},
+    {name: '0-8, 2', args: [[0, 1, 2, 3, 4, 5, 6, 7, 8], 2], expected: [[0, 1], [2, 3], [4, 5], [6, 7], [8]]}
+  ];
 
 
 
-console.log('--- user-name\'s solution ---');
-// link to user's code on github
+console.log('--- jadonOrr\'s solution ---');
+// https://github.com/jadonOrr/freeCodeCampAlgorithms/blob/master/basic-algorithms/chunkyMonkey.js
 
-  // function their_solution(a) {
-  //   return null;
-  // };
-  // run_tests(their_solution, test_cases);
+  function chunky(arr, size) {
+    const splitArr = [];
+      
+    for (let i = 0; i < arr.length; i += size) {
+      splitArr.push(arr.slice(i, size + i));
+    }
+    
+    return splitArr;
+  }
+  run_tests(chunky, test_cases);
 
 console.log('--- trace implementation ---');
 
   // function their_solution_traced(a) {
-  // 	let result; {
-  // 		result = null
-  // 	};
+  //  let result; {
+  //    result = null
+  //  };
   //   return result;
   // };
   // run_tests(their_solution_traced, test_cases);
@@ -40,7 +52,7 @@ console.log('--- trace implementation ---');
 console.log('--- chunk strategy ---');
 
   // function their_solution_chunked(a) {
-  // 	let result = nulling(a);
+  //  let result = nulling(a);
   //   return result;
   // };
   // run_tests(their_solution_chunked, test_cases);
@@ -52,7 +64,7 @@ console.log('--- chunk strategy ---');
   // function nulling() { return null };
   // run_tests(nulling, nulling_tests);
 
-console.log('--- communicate strategy ---');
+console.log('--- communicate findings ---');
 
   // push some bad test cases to test out your logging
 

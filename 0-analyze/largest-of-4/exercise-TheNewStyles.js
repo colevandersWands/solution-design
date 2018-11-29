@@ -12,26 +12,42 @@ IMPLEMENTATION:
 */
 
 // copied from fcc 
-let test_cases = [ 
-  {name: 'name', args: ['name'], expected: null}
+const test_cases = [
+  {name: 'first', args: [[[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]], expected: [5, 27, 39, 1001]},
+  {name: 'second', args: [[[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]], expected: [27, 5, 39, 1001]},
+  {name: 'third', args: [[[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]], expected: [9, 35, 97, 1000000]},
+  {name: 'fourth', args: [[[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]], expected: [25, 48, 21, -3]}
 ];
 
 
 
 console.log('--- user-name\'s solution ---');
-// link to user's code on github
+// https://github.com/TheNewStyles/freecodecamp-algorithm-solutions/blob/master/BasicAlgorithmScripting/largestOfFour.js
 
-  // function their_solution(a) {
-  //   return null;
-  // };
-  // run_tests(their_solution, test_cases);
+  function largestOfFour(arr) {  
+    var largestNum = 0;
+    var largestNumArray = [];
+    
+    for(var i=0; i<=arr.length-1; i++){
+      for(var j=0; j<=arr[i].length-1; j++){
+        if(arr[i][j] > largestNum){
+          largestNum = arr[i][j];
+        }
+      }
+      largestNumArray.push(largestNum);
+      largestNum=0;
+    }
+    
+    return largestNumArray;
+  }
+  run_tests(largestOfFour, test_cases);
 
 console.log('--- trace implementation ---');
 
   // function their_solution_traced(a) {
-  // 	let result; {
-  // 		result = null
-  // 	};
+  //  let result; {
+  //    result = null
+  //  };
   //   return result;
   // };
   // run_tests(their_solution_traced, test_cases);
@@ -40,7 +56,7 @@ console.log('--- trace implementation ---');
 console.log('--- chunk strategy ---');
 
   // function their_solution_chunked(a) {
-  // 	let result = nulling(a);
+  //  let result = nulling(a);
   //   return result;
   // };
   // run_tests(their_solution_chunked, test_cases);
@@ -52,7 +68,7 @@ console.log('--- chunk strategy ---');
   // function nulling() { return null };
   // run_tests(nulling, nulling_tests);
 
-console.log('--- communicate strategy ---');
+console.log('--- communicate findings ---');
 
   // push some bad test cases to test out your logging
 

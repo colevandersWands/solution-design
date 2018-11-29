@@ -12,26 +12,27 @@ IMPLEMENTATION:
 */
 
 // copied from fcc 
-let test_cases = [ 
-  {name: 'name', args: ['name'], expected: null}
+const test_cases = [
+  {name: '', args: [[7, "ate", "", false, 9]], expected: [7, "ate", 9]},
+  {name: '', args: [["a", "b", "c"]], expected: ["a", "b", "c"]},
+  {name: '', args: [[false, null, 0, NaN, undefined, ""]], expected: []},
+  {name: '', args: [[1, null, NaN, 2, undefined]], expected: [1, 2]}
 ];
 
 
-
 console.log('--- user-name\'s solution ---');
-// link to user's code on github
+// https://github.com/samanthaming/freecodecamp-my-solutions/blob/master/basic-algorithm/13-falsy-bouncer.js
 
-  // function their_solution(a) {
-  //   return null;
-  // };
-  // run_tests(their_solution, test_cases);
+  function bouncer2(arr) {
+    return arr.filter(a => Boolean(a));
+  }
 
 console.log('--- trace implementation ---');
 
   // function their_solution_traced(a) {
-  // 	let result; {
-  // 		result = null
-  // 	};
+  //  let result; {
+  //    result = null
+  //  };
   //   return result;
   // };
   // run_tests(their_solution_traced, test_cases);
@@ -40,7 +41,7 @@ console.log('--- trace implementation ---');
 console.log('--- chunk strategy ---');
 
   // function their_solution_chunked(a) {
-  // 	let result = nulling(a);
+  //  let result = nulling(a);
   //   return result;
   // };
   // run_tests(their_solution_chunked, test_cases);
@@ -52,7 +53,7 @@ console.log('--- chunk strategy ---');
   // function nulling() { return null };
   // run_tests(nulling, nulling_tests);
 
-console.log('--- communicate strategy ---');
+console.log('--- communicate findings ---');
 
   // push some bad test cases to test out your logging
 
