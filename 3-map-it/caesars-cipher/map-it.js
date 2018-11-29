@@ -107,7 +107,7 @@ console.log('--- manually solve some cases ---');
       step_4: [81, 68],
       step_5: [82, 69]
     },
-    demap: [[32, 66, 79, 68, 69], ' CODE']
+    demap: [[32, 67, 79, 68, 69], ' CODE']
   }
 
   const CVMMN = {
@@ -127,44 +127,92 @@ console.log('--- manually solve some cases ---');
 
 console.log('--- develop & test chunks ---');
 
+  const decrypt_charCode_tests = [
+    {name: '64', args: [64], expected: 64},
+    {name: '65', args: [65], expected: 78},
+    {name: '77', args: [77], expected: 90},
+    {name: '78', args: [78], expected: 65},
+    {name: '90', args: [90], expected: 77},
+    {name: '91', args: [91], expected: 91}
+  ];
+  function decrypt_charCode(_charCode) {
+    let decrypted;
 
-    // for (let charecter of split_str) {
-    //   if ((65 < charCode) || (charCode < 90)) {
-    //     if (charCode < 77) {
-          
-    //     }
-    //   } else {
-    //     new_value.push(charCode);
-    //   };
-    // };
+    if ((65 <= _charCode) && (_charCode <= 90)) {
+      if (_charCode > 77) {
+        decrypted = _charCode - 13;
+      } else {
+        decrypted = _charCode + 13;
+      };
+    } else {
+      decrypted = _charCode;
+    };
 
-
-
-console.log('--- scaffold chunks ---');
-
-  function solution(raw_arg) {
-    let arg_mapped = map(raw_arg)
-    let step_1 = chunk_a();
-    let step_2 = chunk_b();
-    let step_3 = chunk_c();
-    let result_demapped = demap(step_3)
-    return result_demapped
+    return decrypted;
   };
-  // test_it();
+  run_tests(decrypt_charCode, decrypt_charCode_tests);
 
 
-console.log('--- tracify solution ---');
+console.log('--- scaffold mapped solution ---');
 
-  function tracified(_trace) {
-    let step_1 = chunk_a();
-    if(_trace);
-    let step_2 = chunk_b();
-    if(_trace);
-    let step_3 = chunk_c();
-    if(_trace);
-    return step_3
+  const rot13_mapped_tests = [
+    {name: 'FREE', args: [[83, 69, 82, 82]], expected: [70, 82, 69, 69]},
+    {name: ' CODE', args: [[32, 80, 66, 81, 82]], expected: [32, 67, 79, 68, 69]},
+    {name: ' PIZZA!', args: [[32, 67, 86, 77, 77, 78, 33]], expected: [32, 80, 73, 90, 90, 65, 33]},
+    {name: 'CAMP', args: [map('PNZC')], expected: map('CAMP')},
+    {name: 'LOVE?', args: [map('YBIR?')], expected: map('LOVE?')},
+  ];
+  function rot13_mapped(mapped_arg) {
+    const mapped_solution = [];
+
+    for (let item of mapped_arg) {
+      const decrypted_charCode = decrypt_charCode(item);
+      mapped_solution.push(decrypted_charCode);
+    };
+
+    return mapped_solution;
   };
-  // test_it();
+  run_tests(rot13_mapped, rot13_mapped_tests);
+
+console.log('--- add in mapping & demapping ---')
+
+  function rot13(_str) {
+    const mapped_arg = map(_str);
+
+    const mapped_sol = rot13_mapped(mapped_arg);
+
+    const raw_solution = demap(mapped_sol);
+
+    return raw_solution;
+  };
+  run_tests(rot13, test_cases);
+
+console.log('--- logify solution ---');
+
+  test_cases.push({name: 'FCC', args: ["SERR PBQR PZC"], expected: "FREE CODE CAMP"});
+  test_cases.push({name: 'free pizza', args: ["SRR CVMMN!"], expected: "FREE PIZZA!"});
+
+  function rot13_logged(_str, _log) {
+    let log;
+    if (_log)  log = {args: _str} ;
+
+    const mapped_arg = map(_str);
+    if (_log)  log.mapped_arg = mapped_arg;
+
+    const mapped_sol = rot13_mapped(mapped_arg);
+    if (_log)  log.mapped_sol = mapped_sol;
+
+    const raw_solution = demap(mapped_sol);
+    if (_log)  log.raw_solution = raw_solution;
+
+    if (_log) {
+      log.result = raw_solution;
+      return log;
+    } else {
+      return raw_solution;
+    };
+  };
+  run_tests(rot13_logged, test_cases, true);
 
 
   // testing utils
