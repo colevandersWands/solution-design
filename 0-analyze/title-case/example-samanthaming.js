@@ -6,7 +6,7 @@ const test_cases = [
 ];
 
 // https://github.com/samanthaming/freecodecamp-my-solutions/blob/master/basic-algorithm/11-title-case-a-sentence.js
-//i
+//mine task
 function titleCase(str) {
   let arr = str.split(' ');
 

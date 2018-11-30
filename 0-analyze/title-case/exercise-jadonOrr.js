@@ -6,7 +6,7 @@ const test_cases = [
 
 
 // https://github.com/jadonOrr/freeCodeCampAlgorithms/blob/master/basic-algorithms/titleCaseASentence.js
-//t
+//thine task
 function titleCase(str) {
   return str.toLowerCase().split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 }
