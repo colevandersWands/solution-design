@@ -52,29 +52,16 @@ console.log('--- chunk strategy ---');
   // function nulling() { return null };
   // run_tests(nulling, nulling_tests);
 
-console.log('--- communicate strategy ---');
 
-  // push some bad test cases to test out your logging
+console.log('--- closing notes ---')
 
-  // function their_solution_logged(a, _log) {
-  //  let log;
-  //  if (_log) {
-  //    log = {args: {a}};
-  //  };
+/*
+  what did you learn, what was easy, what was hard
+  what language features did you learn about
+  what techniques did you learn
+  helpful links
+*/
 
-  //  let step_1 = nulling(a);
-  //  if (_log) {
-  //    log.step_1 = step_1;
-  //  }
-
-  //   if (_log) {
-  //     log.result = step_1
-  //     return log;
-  //   } else { 
-  //     return step_1;
-  //   };
-  // };
-  // run_tests(their_solution_logged, test_cases, true);
 
 
 

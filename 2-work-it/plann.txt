@@ -1,3 +1,9 @@
+the questions
+	what needs to happen
+	how can that happen
+	what info do i need
+	where can i get it
+
 * https://scholarworks.gsu.edu/cgi/viewcontent.cgi?article=1010&context=ltd_facpub
 	The groups that performed best were those that received subgoal descriptions with farther transfer between examples and practice problems and those that described subgoals for themselves with nearer transfer.
 	transfer: iso vs contextual

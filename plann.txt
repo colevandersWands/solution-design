@@ -15,6 +15,11 @@ more highly-curated examples
 		to the wild world
 
 
+add in summary questions to templates
+	what language features did you learn
+	helpful links
+	struggle with
+	learned
 
 *** https://www.academia.edu/31671345/Learning_by_Taking_Apart_Deconstructing_Code_by_Reading_Tracing_and_Debugging
 
@@ -51,3 +56,19 @@ https://opendsa-server.cs.vt.edu
 	spin up a moodle or canvas
 		https://canvas.instructure.com/
 		
+other interesting user solutions
+	https://github.com/ssaleem/Front-End-Practice/blob/master/FCC/FreeCodeCampAlgoScripting.md
+
+papers to review
+	http://csis.pace.edu/~bergin/patterns/PatternCourseSlides.pdf
+	https://www.cs.uni.edu/~wallingf/patterns/speak-the-language.html
+	https://www.cs.uni.edu/~wallingf/patterns/elementary/
+	https://pdfs.semanticscholar.org/735e/1f2eedf0b178d27073bffacf04a92e1d31c6.pdf
+	https://pdfs.semanticscholar.org/ba77/8886cbc761ff1d89bb1119b4959436276b23.pdf
+	https://pdfs.semanticscholar.org/7d1a/e75c87bfb5ec6dac62c18770a138bc7a2727.pdf
+	case studies: http://www.dtic.mil/dtic/tr/fulltext/u2/a294844.pdf
+	http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.92.1080&rep=rep1&type=pdf
+	https://www.researchgate.net/publication/220425310_The_Case_for_Case_Studies_of_Programming_Problems
+	https://doc.lagout.org/programmation/python/Introduction%20to%20Programming%20Concepts%20with%20Case%20Studies%20in%20Python%20%5BÜçoluk%20%26%20Kalkan%202012-10-30%5D.pdf
+	http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.460.7914&rep=rep1&type=pdf
+

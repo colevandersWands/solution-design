@@ -39,24 +39,15 @@
     run_tests(challenge_remix_x, challenge_test_cases);
 
 
-  console.log('--- log strategy ---');
+console.log('--- closing notes ---')
 
-    function factorialize_remix_1_logged(num, _log) {
-        // let log;
-        //   if (_log) {
-        //     log = {args: { num }};
-        //   };
+/*
+  what did you learn, what was easy, what was hard
+  what language features did you learn about
+  what techniques did you learn
+  helpful links
+*/
 
-        // ...
-        
-        // if (_log) {
-        //   log.result = result;
-        //   return log;
-        // } else { 
-        //   return result;
-        // };
-    };
-    run_tests(factorialize_remix_1_logged, factorialization_test_cases, true);
 
 
 

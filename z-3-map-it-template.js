@@ -200,14 +200,22 @@ console.log('--- add in mapping & demapping ---')
   };
   run_tests(rot13, test_cases);
 
-console.log('--- loggify solution ---');
 
-  // push some failing test cases
+console.log('--- closing notes ---')
 
-  function rot13_logged(_str, _log) {
-    // loggify your solution from before
-  };
-  run_tests(rot13_logged, test_cases, true);
+/*
+  what did you learn, what was easy, what was hard
+  what language features did you learn about
+  what techniques did you learn
+  helpful links
+*/
+
+
+
+
+
+
+
 
 
   // testing utils

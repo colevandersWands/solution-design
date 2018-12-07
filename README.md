@@ -15,3 +15,6 @@ The groups that performed best were those that received subgoal descriptions wit
 	- Training Learners to Self-Explain: Designing Instructions and Examples to Improve Problem Solving
 and those that described subgoals for themselves with nearer transfer.
 	- 1-remix
+
+
+for fun extra practice: if-hemingway

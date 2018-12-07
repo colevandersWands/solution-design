@@ -1,6 +1,11 @@
-// there will be a whole unit on debugging before solution design
-// it will cover this template and have smaller, focused, exercises
-// in the mean time:
+/*
+given: test cases it should pass
+
+given: snippet
+
+test cases it does pass
+
+*/
 //	https://medium.com/northcoders/understanding-bugs-and-errors-in-javascript-675ebb0a109a
 //	https://codeburst.io/5-common-mistakes-that-every-new-javascript-programmer-does-d0559770d345
 {
@@ -32,7 +37,7 @@ console.log('--- tests it does pass ---');
 	];
 	run_tests(buggy_code, buggy_tests);
 
-console.log('--- traced ---');
+console.log('--- traced: let nothing hide ---');
 
 	// for refactor to while
 	function buggy_code_traced(_keys, _values) {
@@ -42,14 +47,7 @@ console.log('--- traced ---');
 	run_tests(buggy_code_traced, buggy_tests);
 
 
-console.log('--- chunked ---');
-
-	console.log('	no need to chunk, i see the problem');
-
-
-console.log('--- logged ---');
-
-	console.log('	no need to log, i see the problem');
+console.log('--- logged: find the surprising steps ---');
 
 
 console.log('--- experiment 1 ---')

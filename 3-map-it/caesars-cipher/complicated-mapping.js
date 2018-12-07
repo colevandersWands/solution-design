@@ -54,6 +54,8 @@ console.log('--- define mapping strategy ---')
     let new_value = [];
     let step = 0;
     for (let i = 0; i < _str.length; i++) {
+      // http://wiki.c2.com/?FunctionsForLoops
+      //  make recursive solution
       let charCode = _str.charCodeAt(i);
 
       if ((65 < charCode) || (charCode < 90)) {

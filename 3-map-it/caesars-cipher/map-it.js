@@ -89,7 +89,7 @@ console.log('--- manually solve some cases ---');
 
   const SERR = {
     map: ['SERR', [83, 69, 82, 82]],
-    solve_each_charCode: {
+    decrypt_each_charCode: {
       step_1: [83, 70],
       step_2: [69, 82],
       step_3: [82, 69],
@@ -100,7 +100,7 @@ console.log('--- manually solve some cases ---');
 
   const PBQR = {
     map: [' PBQR', [32, 80, 66, 81, 82]],
-    solve_each_charCode: {
+    decrypt_each_charCode: {
       step_1: [32, 32],
       step_2: [80, 66],
       step_3: [66, 79],
@@ -112,7 +112,7 @@ console.log('--- manually solve some cases ---');
 
   const CVMMN = {
     map: [' CVMMN!', [32, 67, 86, 77, 77, 78, 33]],
-    solve_each_charCode: {
+    decrypt_each_charCode: {
       step_1: [32, 32],
       step_2: [67, 80],
       step_3: [86, 73],
@@ -165,8 +165,8 @@ console.log('--- scaffold mapped solution ---');
   function rot13_mapped(mapped_arg) {
     const mapped_solution = [];
 
-    for (let item of mapped_arg) {
-      const decrypted_charCode = decrypt_charCode(item);
+    for (let charCode of mapped_arg) {
+      const decrypted_charCode = decrypt_charCode(charCode);
       mapped_solution.push(decrypted_charCode);
     };
 
