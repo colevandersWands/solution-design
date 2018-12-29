@@ -26,24 +26,24 @@ console.log('--- user-name\'s solution ---');
   // };
   // run_tests(their_solution, test_cases);
 
-console.log('--- trace implementation ---');
+console.log('--- expand implementation ---');
 
-  // function their_solution_traced(a) {
+  // function their_solution_expanded(a) {
   // 	let result; {
   // 		result = null
   // 	};
   //   return result;
   // };
-  // run_tests(their_solution_traced, test_cases);
+  // run_tests(their_solution_expanded, test_cases);
 
 
-console.log('--- chunk strategy ---');
+console.log('--- refactor strategy ---');
 
-  // function their_solution_chunked(a) {
+  // function their_solution_refactored(a) {
   // 	let result = nulling(a);
   //   return result;
   // };
-  // run_tests(their_solution_chunked, test_cases);
+  // run_tests(their_solution_refactored, test_cases);
 
   // let nulling_tests = [
   //   {name: 'undefined', args: [undefined], expected: null},
@@ -51,6 +51,15 @@ console.log('--- chunk strategy ---');
   // ];
   // function nulling() { return null };
   // run_tests(nulling, nulling_tests);
+
+
+console.log('--- log strategy ---');
+
+  // function their_solution_chunked(a) {   const log = [{arg: a}];
+  //  let result = nulling(a);              log.push({result});
+  //   return {result, log};
+  // };
+  // log_reports(their_solution_chunked, test_cases);
 
 
 console.log('--- closing notes ---')
@@ -65,39 +74,36 @@ console.log('--- closing notes ---')
 
 
 
-// testing utils
-function run_tests(_target, _cases, _log) {
-  for (let t_case of _cases) {
-    let expected = t_case.expected;
 
-    let actual;
-    let msg;
-    let log;
-    if (_log) {
-      log = _target(... t_case.args, true);
-      actual = log.result;
-    } else {
-      actual = _target(... t_case.args, false);
-    };
+// ------- testing utils ------- 
+
+
+function run_tests(_target, _cases) {
+  for (let t_case of _cases) {
+    const expected = t_case.expected;
+    const actual = _target(... t_case.args, false);
 
     let pass;
     if (typeof expected === 'object') {
-      actual = JSON.stringify(actual);
-      expected = JSON.stringify(expected);
-      pass = actual === expected;
+      const _actual = JSON.stringify(actual);
+      const _expected = JSON.stringify(expected);
+      pass = _actual === _expected;
     } else {
       pass = actual === expected;
     };
 
-    if (!pass && _log) {
-      console.log(`    ${t_case.name}: \n` + 
-          "actual: ", log, "\n" +
-          `expected: {${typeof expected}, ${expected}}`);
-    } else if (!pass) {
-      console.log(`${t_case.name}: \n` + 
-          `   actual: {${typeof actual}, ${actual}} \n` +
-          `   expected: {${typeof expected}, ${expected}}`);
+    if (!pass) {
+      console.log(`${t_case.name}: \n`);
+      console.log(`   actual: ${typeof actual},`, actual);
+      console.log(`   expected: ${typeof expected},`, expected);
     };
   };
 };
+function log_reports(_target, _cases) {
+  const report = {}
+  for (let t_case of _cases) {
+     report[t_case.name] = _target(...t_case.args) 
+  }
+  console.log(report)
+}
 }

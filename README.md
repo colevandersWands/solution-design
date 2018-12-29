@@ -18,3 +18,10 @@ and those that described subgoals for themselves with nearer transfer.
 
 
 for fun extra practice: if-hemingway
+
+
+-------
+
+vocab fix
+* trace -> expand
+* chunk -> refactor

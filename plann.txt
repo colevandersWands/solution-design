@@ -1,3 +1,7 @@
+vocab fix
+	trace -> expand
+	chunk -> refactor
+
 more highly-curated examples
 	ie. TheNewStyles
 		chunking doesn't quite work

@@ -38,6 +38,21 @@
     };
     run_tests(challenge_remix_x, challenge_test_cases);
 
+  
+  console.log('--- log strategy ---');
+    
+    
+    function challenge_remix_x_logg(num) {                const log = [{arg: num}];
+      /*
+        build your remix here
+          call as functions any chunks you brought over
+          and/or use the body of another solution as a starter
+      */
+
+      return {result, log};
+    };
+    log_reports(challenge_remix_x_logg, challenge_test_cases);
+
 
 console.log('--- closing notes ---')
 
@@ -51,39 +66,36 @@ console.log('--- closing notes ---')
 
 
 
-  // testing utils
-  function run_tests(_target, _cases, _log) {
-    for (let t_case of _cases) {
-      let expected = t_case.expected;
 
-      let actual;
-      let msg;
-      let log;
-      if (_log) {
-        log = _target(... t_case.args, true);
-        actual = log.result;
-      } else {
-        actual = _target(... t_case.args, false);
-      };
+// ------- testing utils ------- 
 
-      let pass;
-      if (typeof expected === 'object') {
-        actual = JSON.stringify(actual);
-        expected = JSON.stringify(expected);
-        pass = actual === expected;
-      } else {
-        pass = actual === expected;
-      };
 
-      if (!pass && _log) {
-        console.log(`    ${t_case.name}: \n` + 
-            "actual: ", log, "\n" +
-            `expected: {${typeof expected}, ${expected}}`);
-      } else if (!pass) {
-        console.log(`${t_case.name}: \n` + 
-            `   actual: {${typeof actual}, ${actual}} \n` +
-            `   expected: {${typeof expected}, ${expected}}`);
-      };
+function run_tests(_target, _cases) {
+  for (let t_case of _cases) {
+    const expected = t_case.expected;
+    const actual = _target(... t_case.args, false);
+
+    let pass;
+    if (typeof expected === 'object') {
+      const _actual = JSON.stringify(actual);
+      const _expected = JSON.stringify(expected);
+      pass = _actual === _expected;
+    } else {
+      pass = actual === expected;
+    };
+
+    if (!pass) {
+      console.log(`${t_case.name}: \n`);
+      console.log(`   actual: ${typeof actual},`, actual);
+      console.log(`   expected: ${typeof expected},`, expected);
     };
   };
+};
+function log_reports(_target, _cases) {
+  const report = {}
+  for (let t_case of _cases) {
+     report[t_case.name] = _target(...t_case.args) 
+  }
+  console.log(report)
+}
 }
